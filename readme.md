@@ -1,22 +1,18 @@
 # My standard environment setup on all new linux boxes
 
-To install programs wanted/needed:
+To install needed packages and to configure ssh not to allow password auth:
 
 ```bash
 sudo install-system.sh
 ```
 
 
-As the user that needs the zsh setup, do run:
+To set up s users shell with ZSH, VIM and Tmux:
 
 ```bash
 cd ~
 dldir/install-user.sh
 ```
 
+Also the public key for ssh auth is added for the user
 
-Sets up ZSH and oh-my-zsh.
-
-Installs my public key for my yubikey for SSH authentication
-
-Disables ssh password-authentication
