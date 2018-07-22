@@ -1,10 +1,3 @@
-# Install zsh, tmux,  git and most essential tools for me
-sudo apt install -y tmux zsh git mc htop
-
-# Disable ssh password authentication
-sudo sed -i '/PasswordAuthentication\s/ s/# *//' /etc/ssh/sshd_config
-sudo sed -i '/^PasswordAuthentication/s/yes/no/' /etc/ssh/sshd_config
-
 # Delete previous installtion of oh-my-zsh if it's there
 rm -rf ~/.oh-my-zsh
 
