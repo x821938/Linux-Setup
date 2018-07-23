@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+
+
 # Install zsh, tmux,  git and most essential tools for me
 apt install -y tmux zsh git mc htop
 
