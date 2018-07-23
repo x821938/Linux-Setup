@@ -9,9 +9,9 @@ plugins=(
 )
 
 TZ='Europe/Copenhagen'; export TZ
+TERM=screen-256color	
 
 if [ "$USER" != "root" ]; then
-	TERM=xterm-256color	
 	if [[ -z "$TMUX" ]]; then
 		if tmux has-session 2>/dev/null; then
 			exec tmux attach
@@ -19,8 +19,6 @@ if [ "$USER" != "root" ]; then
 			exec tmux
 		fi
 	fi
-else
-	TERM=putty
 fi
 
 source $ZSH/oh-my-zsh.sh
