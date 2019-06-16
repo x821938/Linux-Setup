@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cd ~
+
 # Delete previous installtion of oh-my-zsh if it's there
 rm -rf ~/.oh-my-zsh
 
